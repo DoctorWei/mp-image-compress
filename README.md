@@ -16,7 +16,7 @@ npm i mp-image-compress --save
 ```
 依赖包安装后，需要在小程序开发者工具中：构建npm
 
-## 4 - 接口使用
+## 4 - 接口使用示例
 
 index.js
 ```js
@@ -68,60 +68,4 @@ Page({
     })
   },
 })
-```
-
-index.wxml
-```html
-<view class="container">
-  <view class="image-container" bindtap="chooseImage">
-    <block wx:if="{{img}}">
-      <image class="image" src='{{img}}' mode='aspectFit'></image>
-    </block>
-    <view class="image-tips" wx:else>
-      上传照片
-    </view>
-  </view>
-  <button class="btn" bindtap="preview" wx:if="{{img}}">预览</button>
-  <button class="btn" type="warn" bindtap="DelImg" wx:if="{{img}}">删除</button>
-  <view class="info">请使用2.32.3及以上版本基础库</view>
-</view>
-```
-
-index.wxss
-```css
-.container {
-  height: 100%;
-  padding: 100rpx 0;
-  text-align: center;
-}
-
-.image-container {
-  background: #f7f7f7;
-  border: 1rpx solid #ddd;
-  width: 540rpx;
-  height: 540rpx;
-  text-align: center;
-  position: relative;
-  display: inline-block;
-}
-
-.image {
-  max-width: 540rpx;
-  max-height: 540rpx;
-  display: block;
-}
-
-.image-tips {
-  line-height: 540rpx;
-  font-size: 22rpx;
-  color: #ccc;
-}
-
-.btn {
-  margin: 20rpx;
-}
-
-.info {
-  margin-top: 100rpx;
-}
 ```
