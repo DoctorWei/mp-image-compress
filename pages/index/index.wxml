@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="image-container" bindtap="chooseImage">
+    <block wx:if="{{img}}">
+      <image class="image" src='{{img}}' mode='aspectFit'></image>
+    </block>
+    <view class="image-tips" wx:else>
+      上传照片
+    </view>
+  </view>
+  <button class="btn" bindtap="preview" wx:if="{{img}}">预览</button>
+  <button class="btn" type="warn" bindtap="DelImg" wx:if="{{img}}">删除</button>
+  <view class="info">请使用2.32.3及以上版本基础库</view>
+</view>

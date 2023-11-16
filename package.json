@@ -1,0 +1,20 @@
+{
+  "name": "mp-image-compress",
+  "version": "1.0.2",
+  "description": "微信小程序图片压缩接口（图片压缩至指定大小），并返回 width, height, size",
+  "main": "app.js",
+  "miniprogram": "libs",
+  "dependencies": {
+    "mp-image-compress": "^1.0.2"
+  },
+  "keywords": [
+    "微信小程序",
+    "图片压缩上传",
+    "图片压缩至指定大小",
+    "图片压缩至指定尺寸",
+    "图片返回 width, height, size",
+    "图片压缩组件"
+  ],
+  "author": "DoctorWei",
+  "license": "MIT"
+}

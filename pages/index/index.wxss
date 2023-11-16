@@ -1,0 +1,35 @@
+.container {
+  height: 100%;
+  padding: 100rpx 0;
+  text-align: center;
+}
+
+.image-container {
+  background: #f7f7f7;
+  border: 1rpx solid #ddd;
+  width: 540rpx;
+  height: 540rpx;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  max-width: 540rpx;
+  max-height: 540rpx;
+  display: block;
+}
+
+.image-tips {
+  line-height: 540rpx;
+  font-size: 22rpx;
+  color: #ccc;
+}
+
+.btn {
+  margin: 20rpx;
+}
+
+.info {
+  margin-top: 100rpx;
+}
